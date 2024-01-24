@@ -10,7 +10,7 @@ import {
 import { ItemProps } from "./item.types";
 import { StyledImage } from "../common/common.styled";
 
-export const ListItem = ({ item }: ItemProps) => (
+export const ItemForList = ({ item }: ItemProps) => (
   <ItemWrapper>
     <StyledImage
       $imageurl={item?.thumbnail ?? ''}

@@ -5,7 +5,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { ListWrapper, ItemWrapper } from "./itemlistContent.styled";
 import { Divider } from "../../common/common.styled";
 
-import { ListItem } from "../../item";
+import { ItemForList } from "../../item";
 
 import { Content } from "../content";
 
@@ -41,7 +41,7 @@ export const ItemlistContent = () => {
                     key={item.id}
                     onClick={() => navigate(`${routes.ITEMS}/${item.id}`)}
                   >
-                    <ListItem item={item} />
+                    <ItemForList item={item} />
                     <Divider />
                   </ItemWrapper>
                 )

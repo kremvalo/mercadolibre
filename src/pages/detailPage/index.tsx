@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "../../core/redux/store";
 import { getItemAsync } from "./slice";
 import { useParams } from "react-router-dom";
-import { StyledImage } from "../../components/common/common.styled";
+import { ButtonCustom, StyledImage } from "../../components/common/common.styled";
 import { Description, InfoContainer, LeftContainer, Price, RightContainer, StateAndQuantity, Title, TitleDescription } from "./detailPage.styled";
 import { Item } from "../../core/services/types";
 import Loader from "../../components/common/loader";
@@ -43,7 +43,9 @@ export const DetailPage = () => {
             <RightContainer>
               <StateAndQuantity>{`${itemFormated.condition} - ${itemFormated.initialQuantity}`}</StateAndQuantity>
               <Title>{itemFormated.title ?? 'Sin descripción'}</Title>
-              <Price>$73.773</Price>
+              <Price>${new Intl.NumberFormat().format(parseInt(itemFormated?.price.toFixed(0)))}</Price>
+
+              <ButtonCustom>Comprar</ButtonCustom>
             </RightContainer>
           </InfoContainer>
         </Content>

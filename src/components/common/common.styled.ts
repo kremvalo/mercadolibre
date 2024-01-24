@@ -22,3 +22,15 @@ export const StyledImage = styled.div<ImageContainerProps>`
   height: ${(props) => props.height};
   width: ${(props) => props.width};
 `;
+
+
+export const ButtonCustom = styled.button`
+  border-radius: 6px;
+  background-color: ${COLORS.blue};
+  color: white;
+  padding: 0 20px; 
+  border: 0px;
+  width: 100%;
+  margin-top: 2em;
+  line-height: 48px;
+`;
