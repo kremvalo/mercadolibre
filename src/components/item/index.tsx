@@ -13,14 +13,14 @@ import { StyledImage } from "../common/common.styled";
 export const ItemForList = ({ item }: ItemProps) => (
   <ItemWrapper>
     <StyledImage
-      $imageurl={item?.thumbnail ?? ''}
+      $imageurl={item?.picture ?? ''}
       width={'10rem'}
       height={'10rem'}
     />
     <InfoContainer>
-      <Price>${new Intl.NumberFormat().format(parseInt(item?.price.toFixed(0)))}</Price>
+      <Price>${new Intl.NumberFormat().format(item?.price.amount)}</Price>
       <Title>{item?.title}</Title>
     </InfoContainer>
-    <StoreName>{item?.officialStoreName?.toLowerCase()}</StoreName>
+    <StoreName>{item?.seller?.toLowerCase()}</StoreName>
   </ItemWrapper>
 );

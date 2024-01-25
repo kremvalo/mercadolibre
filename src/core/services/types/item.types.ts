@@ -1,13 +1,17 @@
-import { Picture } from "./picture.types";
-
 export interface Item {
   id: string;
   title: string;
+  price: Price;
+  picture: string;
   condition: string;
-  initialQuantity: number;
-  pictures: Picture[];
-  price: number;
-  thumbnail?: string;
-  officialStoreName?: string;
+  freeShipping: boolean;
+  soldQuantity?: number;
   description?: string;
+  seller?: string;
+}
+
+export interface Price {
+  currency: string;
+  amount: number;
+  decimals: number;
 }

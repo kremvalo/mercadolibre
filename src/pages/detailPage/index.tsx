@@ -7,7 +7,7 @@ import { getItemAsync } from "./slice";
 import { useParams } from "react-router-dom";
 import { ButtonCustom, StyledImage } from "../../components/common/common.styled";
 import { Description, InfoContainer, LeftContainer, Price, RightContainer, StateAndQuantity, Title, TitleDescription } from "./detailPage.styled";
-import { Item } from "../../core/services/types";
+import { Item } from "../../core/services/types/item.types";
 import Loader from "../../components/common/loader";
 
 export const DetailPage = () => {
@@ -33,7 +33,7 @@ export const DetailPage = () => {
           <InfoContainer>
             <LeftContainer>
               <StyledImage
-                $imageurl={itemFormated.pictures[0].url}
+                $imageurl={itemFormated.picture}
                 width={'35rem'}
                 height={'35rem'}
               />
@@ -41,9 +41,9 @@ export const DetailPage = () => {
               <Description>{itemFormated?.description ?? ''}</Description>
             </LeftContainer>
             <RightContainer>
-              <StateAndQuantity>{`${itemFormated.condition} - ${itemFormated.initialQuantity}`}</StateAndQuantity>
+              <StateAndQuantity>{`${itemFormated.condition} - ${itemFormated.soldQuantity} vendidos`}</StateAndQuantity>
               <Title>{itemFormated.title ?? 'Sin descripción'}</Title>
-              <Price>${new Intl.NumberFormat().format(parseInt(itemFormated?.price.toFixed(0)))}</Price>
+              <Price>${new Intl.NumberFormat().format(parseInt(itemFormated?.price.amount.toFixed(0)))}</Price>
 
               <ButtonCustom>Comprar</ButtonCustom>
             </RightContainer>

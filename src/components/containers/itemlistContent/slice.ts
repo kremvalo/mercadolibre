@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { ServiceApi } from '../../../core/services/serviceApi/serviceApi';
-import { Item } from '../../../core/services/types';
+import { Item } from '../../../core/services/types/item.types';
 
 interface InitialProps{
   items: Item[] | null
