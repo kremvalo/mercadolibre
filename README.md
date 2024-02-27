@@ -2,6 +2,9 @@
 
 Aplicación web en la que se puede buscar productos disponibles y ver sus detalles.
 
+## Demo en vivo
+
+https://meli-teal.vercel.app
 
 | Visual del Listado de items | Visual del detalle del item |
 | ---      | ---       |
