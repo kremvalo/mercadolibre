@@ -6,6 +6,10 @@ Aplicación web en la que se puede buscar productos disponibles y ver sus detall
 
 https://meli-teal.vercel.app
 
+## Requerimientos
+
+Node JS version v18.16.0
+
 | Visual del Listado de items | Visual del detalle del item |
 | ---      | ---       |
 | <img width="1682" alt="image" src="https://github.com/kremvalo/mercadolibre/assets/32576306/90325d6a-7f20-47fd-8a33-9ab6eaa0bee4"> | <img width="1699" alt="image" src="https://github.com/kremvalo/mercadolibre/assets/32576306/8142a408-5681-488e-88d8-fc315ff6ff03">
