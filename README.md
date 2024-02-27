@@ -6,9 +6,7 @@ Aplicación web en la que se puede buscar productos disponibles y ver sus detall
 
 https://meli-teal.vercel.app
 
-## Requerimientos
 
-Node JS version v18.16.0
 
 | Visual del Listado de items | Visual del detalle del item |
 | ---      | ---       |
@@ -23,6 +21,9 @@ Construida con React y las siguientes herramientas adicionales:
 | Styled Components     | Manejo de estilos visuales        |
 | Typescript     | Lenguaje tipado        |
 
+## Requerimientos
+
+Node JS version v18.16.0
 
 # Como empezar
 
