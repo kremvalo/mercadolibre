@@ -3,8 +3,9 @@ import { RequestServiceDecorator } from "../http/RequestServiceDecorator";
 export class ServiceApi {
   reqsrcDecorator: RequestServiceDecorator;
   static _instance: ServiceApi;
+
   constructor() {
-    this.reqsrcDecorator = new RequestServiceDecorator("localhost:3000/api/items");
+    this.reqsrcDecorator = new RequestServiceDecorator("https://apimercadolibre.vercel.app/api/items");
   }
 
   static getInstance(): ServiceApi {
